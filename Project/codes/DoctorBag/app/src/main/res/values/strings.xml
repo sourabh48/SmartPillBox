@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Smart Pill</string>
+    <string name="registration">REGISTRATION:</string>
+    <string name="not_a_existing_user_signup_now">Not A Existing User Signup Now!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_a_user_login_now">Already A User Login Now</string>
+    <string name="device_i_d">Device I.D.</string>
+    <string name="logout">Logout</string>
+    <string name="input_name">Input Name:</string>
+    <string name="abouts">About Us</string>
+    <string name="closedrawer">close_drawer</string>
+    <string name="opendrawer">open_drawer</string>
+
+
+    <!-- Edit Alarm Activity/Fragment -->
+    <string name="time">Time</string>
+    <string name="label">Label</string>
+    <string name="days">Days</string>
+    <string name="edit_alarm">Edit Alarm</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="add_label_hint">Add a label!</string>
+    <string name="update_complete">Changes Saved</string>
+    <string name="update_failed">Update Failed</string>
+    <string name="delete_complete">Alarm Deleted</string>
+    <string name="delete_failed">Delete Failed</string>
+    <string name="delete_dialog_title">Confirm Delete Alarm</string>
+    <string name="delete_dialog_content">Are you sure you would like to delete this alarm?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Edit Alarm Menu -->
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+
+    <!-- Alarm Landing Page Activity/Fragment -->
+    <string name="launch_main_activity">Launch Main Activity</string>
+    <string name="dismiss">Dismiss</string>
+
+    <!-- Days -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!-- Notification -->
+    <string name="channel_name">Smart Pill</string>
+    <string name="heart_rate">Heart Rate</string>
+    <string name="reset">reset</string>
+    <string name="on_off">OFF/ON</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="heartbeat_history_refresh">HeartBeat History Refresh:</string>
+</resources>

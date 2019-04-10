@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_white_18dp"
+            android:title="Home" />
+
+
+        <item
+            android:id="@+id/nav_medicine"
+            android:icon="@drawable/baseline_local_hospital_white_18dp"
+            android:title="Medicine Shedule" />
+
+        <item
+            android:id="@+id/nav_nearby"
+            android:icon="@drawable/baseline_local_pharmacy_white_18dp"
+            android:title="Nearby" />
+
+        <item
+            android:id="@+id/nav_details"
+            android:icon="@drawable/baseline_assignment_white_18dp"
+            android:title="Details" />
+
+        <item
+            android:id="@+id/nav_policy"
+            android:icon="@drawable/baseline_warning_white_18dp"
+            android:title="Privacy Policy" />
+
+    </group>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/baseline_group_white_18dp"
+                android:title="About Us" />
+
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" >
+
+        <TextView
+            android:id="@+id/onoffbanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/on_off"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true"/>
+
+        <Switch
+
+           android:id="@+id/on_switch"
+            android:layout_below="@id/onoffbanner"
+            android:layout_marginEnd="20dp"
+            android:scaleY="1.1"
+            android:scaleX="1.3"
+            android:track="@drawable/button_background"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"/>
+
+
+        <TextView
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heart_rate"
+            android:layout_alignParentStart="true"
+            android:textSize="30sp"
+            android:layout_margin="13dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/value"
+            android:layout_below="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/heartrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:includeFontPadding="false"
+                android:text="0"
+                android:layout_centerVertical="true"
+                android:textSize="120sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/heartrate"
+                android:layout_toEndOf="@id/heartrate"
+                android:includeFontPadding="false"
+                android:text="bpm"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/indicator"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/heart" />
+        </RelativeLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_below="@+id/value"
+            android:id="@+id/heartgraphrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</FrameLayout>

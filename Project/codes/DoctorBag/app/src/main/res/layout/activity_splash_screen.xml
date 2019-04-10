@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="SmartPill"
+        android:textColor="#ffffff"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:shadowColor="#c2c2c2"
+        android:stateListAnimator="@anim/fade"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="20.0"
+        android:fadingEdgeLength="5dp"
+        />
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:id="@+id/image4"
+        android:src="@drawable/medicallogo"
+        android:paddingRight="-21dp"
+        android:paddingLeft="-21dp"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#c2c2c2"
+        android:stateListAnimator="@anim/fade"
+        android:shadowDx="5.0"
+        android:shadowDy="5.0"
+        android:shadowRadius="20.0"
+        android:fadingEdgeLength="5dp"
+        android:layout_below="@+id/text"/>
+
+
+    </RelativeLayout>

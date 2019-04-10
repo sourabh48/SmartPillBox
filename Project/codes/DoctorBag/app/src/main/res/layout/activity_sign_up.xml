@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/loginpage">
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@drawable/header">
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/logo"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_width="match_parent">
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:layout_width="match_parent"
+            android:hint="@string/name"
+            android:textSize="17sp"
+            android:textColorHint="#000000"
+            android:focusable="true"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:ems="20"
+            />
+
+        <EditText
+            android:layout_below="@+id/name"
+            android:id="@+id/deviceid"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:layout_width="match_parent"
+            android:hint="@string/device_i_d"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:textColorHint="#000000"
+            android:focusable="true"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:ems="20"
+            />
+
+        <EditText
+            android:layout_below="@+id/deviceid"
+            android:id="@+id/username"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_border"
+            android:layout_width="match_parent"
+            android:hint="@string/email"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:textColorHint="#000000"
+            android:focusable="true"
+            android:textColor="#000000"
+            android:padding="8dp"
+            android:ems="20"
+            />
+
+        <EditText
+            android:ems="20"
+            android:layout_below="@+id/username"
+            android:id="@+id/password"
+            android:focusable="true"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000000"
+            android:background="@drawable/edit_text_border"
+            android:hint="@string/password"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="8dp"/>
+
+        <Button
+            android:layout_below="@id/password"
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/sign_up"
+            android:textColor="#ffffff"
+            android:background="@drawable/login_button"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_below="@id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="@string/already_a_user_login_now"
+            android:onClick="gologin"/>
+
+    </RelativeLayout>
+</RelativeLayout>

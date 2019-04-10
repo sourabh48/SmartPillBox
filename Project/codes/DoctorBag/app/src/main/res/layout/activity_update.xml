@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    tools:context=".UpdateActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/atoolbar"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/atoolbar"
+        android:padding="20dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="1dp"
+        android:layout_marginTop="33dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_image"
+        app:civ_border_color="#878787"/>
+
+    <TextView
+        android:id="@+id/setting_name"
+        android:padding="6dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Default User" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setting_name"
+        android:layout_alignEnd="@+id/profile_image"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/button_background"
+        android:elevation="23dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/securityname"
+        android:padding="6dp"
+        android:layout_below="@+id/setting_name"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/heartbeat_history_refresh" />
+
+    <Button
+       android:layout_below="@+id/securityname"
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="29dp"
+        android:text="@string/reset"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="27sp"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/name"/>
+    </RelativeLayout>
+</RelativeLayout>

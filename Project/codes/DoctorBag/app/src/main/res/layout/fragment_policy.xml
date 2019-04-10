@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    tools:context=".PolicyFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="9dp">
+
+        <RelativeLayout
+            android:id="@+id/abouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/name"
+            android:layout_margin="9dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/about"
+                    android:layout_margin="12dp"
+                    android:text="Privacy and Policy."
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutCompany"
+                    android:layout_below="@+id/about"
+                    android:layout_margin="10dp"
+                    android:textColor="#ffffff"
+                    android:padding="5dp"
+                    android:textSize="17sp"
+                    android:text="As a current customer of Zeneath Services, Inc., we would like to take this opportunity to both thank you for your business and to share with you the importance our agency places upon protecting the privacy of information we gather from you in accordance with applicable state and federal laws. \n \n II. Information we collect and the means used to collect: \n \n Zeneath Services, Inc. collects information about our customers that is necessary to provide those services usual and customary to independent insurance agents. Zeneath Services, Inc. collects this necessary information from the following sources: \n\n -Information we receive from you on applications or other forms, this information may include, but is not limited to, your name, address, and date of birth. \n\n -Information about our clients’ transactions with us; this information may include, but is not limited to, claims and payment history. \n\n -Information we receive from a consumer-reporting agency; this information may include, but is not limited to, a driving record or insurance score report. \n\n To collect customer information from the above-stated sources, Zeneath Services, Inc. may use the following means of communication to gather information: written, in-person, telephone, facsimile, electronically, and online.  "/>
+
+
+            </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
